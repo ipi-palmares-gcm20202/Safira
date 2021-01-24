@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <img class="logo" src="../assets/logo.png" alt="logo">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,10 +16,18 @@
             Lançamentos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Eletrônicos</a></li>
-            <li><a class="dropdown-item" href="#">Automóvel</a></li>
+            <li><a class="dropdown-item" href="#">Carros</a></li>
+            <li><a class="dropdown-item" href="#">Celular</a></li>
+            <li><a class="dropdown-item" href="#">Fones de Ouvido</a></li>
+            <li><a class="dropdown-item" href="#">Jogos</a></li>
+            <li><a class="dropdown-item" href="#">notebook</a></li>
+            <li><a class="dropdown-item" href="#">Monitores</a></li>
+            <li><a class="dropdown-item" href="#">Motos</a></li>
+            <li><a class="dropdown-item" href="#">Tv</a></li>
+            
+
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">....</a></li>
           </ul>
         </li>
       </ul>
@@ -42,9 +50,13 @@ export default {
 
 <style scoped>
 .navbar{
-    background-color: #000000;}
+    background-color: black;
+    }
 .logo{
     width:12%;
+}
+.nav-link{
+  color:white;
 }
 
 
