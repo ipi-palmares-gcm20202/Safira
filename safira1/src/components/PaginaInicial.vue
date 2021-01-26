@@ -148,7 +148,7 @@
 
 <script>
 export default {
-  name: 'pagina-inicial'
+  name: 'paginaInicial'
 }
 
 </script>

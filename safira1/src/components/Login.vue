@@ -32,7 +32,7 @@
                   <p class="esqueceu-a-senha">Esqueceu a senha?</p>
               </div>
               <div class="row">
-                  <a class="btn btn-outline-danger col-11 mx-auto">CADASTRE-SE AGORA</a>
+                  <router-link to = "/cadastro" class="btn btn-outline-danger col-11 mx-auto">CADASTRE-SE AGORA</router-link>
               </div>
           </form>
       </div>
@@ -59,7 +59,7 @@ export default{
                     var senhaAdmin = '123456';
 
                     if (this.email === emailAdmin && this.senha === senhaAdmin) {
-                        alert('Login realizado com sucesso!');
+                        this.$router.push({ name: 'paginainicial' });
                     } else {
                         this.exibirAlerta = true;
                         this.senha = '';
