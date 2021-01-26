@@ -1,41 +1,30 @@
 <template>
-  <div>
-    <menu-superior />
-
-    <div>
-    <carousel />
-    </div>
-
-    <div>
-    <pagina-inicial />
-    </div>
-
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
   </div>
-  
-
+  <router-view/>
 </template>
 
-<script>
-import MenuSuperior from './components/MenuSuperior.vue'
-import Carousel from './components/Carousel.vue'
-import PaginaInicial from './components/PaginaInicial.vue'
-
-
-export default {
-  name: 'App',
-  components: {
-    MenuSuperior,
-    Carousel,
-    PaginaInicial
-  }
-}
-</script>
-
 <style>
-   body{
-        background: black;
-        color: white;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>

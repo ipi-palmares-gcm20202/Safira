@@ -121,7 +121,7 @@ export default{
     }
     img{
         width: 160px;
-        margin-left: 95px;
+        margin-left: 20px;
         border-radius: 50%;
     }
 
