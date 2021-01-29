@@ -4,6 +4,7 @@
  
     <div class="card" id="telaLogin">
       <div>
+<<<<<<< HEAD
           <img class="imgCadastro " src="../assets/logo.png" >
       </div>
       <div class="card-body">
@@ -12,24 +13,46 @@
 
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Nome</label>
+=======
+          <img src="../assets/logo.png" >
+      </div>
+      <div class="card-body">
+          <form>
+                <div class="mb-3"><p class="blog-title">Bem vindo(a) ao BLOG Safira! CADASTRE-SE.</p> 
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Seu nome:</label>
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
                         <input type="text" class="form-control" id="" v-model="Nome">
                     </div>
 
                     <div>
+<<<<<<< HEAD
                         <label for="exampleInputEmail1" class="form-label">Email</label>
+=======
+                        <label for="exampleInputEmail1" class="form-label">Email:</label>
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" v-model="email">
                     
                     </div>
                 
                     <div class="mb-3">
+<<<<<<< HEAD
                         <label for="exampleInputPassword1" class="form-label">Senha</label>
+=======
+                        <label for="exampleInputPassword1" class="form-label">Senha:</label>
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
                         <i class="fas fa-key"></i>
                         <input type="password" class="form-control" id="exampleInputPassword1" v-model="senha">
                     </div>
                 
                     <div class="mb-3">
                       
+<<<<<<< HEAD
                         <label for="exampleInputPassword2" class="form-label">Confirmação de Senha</label>
+=======
+                        <label for="exampleInputPassword2" class="form-label">Repita sua senha:</label>
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
                         <i class="fas fa-key"></i>
                         <input type="password" class="form-control" id="exampleInputPassword1" v-model="confirmar">
                         <span v-show="deuErro1" class="erro-senha"><i class="fa fa-times"></i>Nenhum dado cadastrado ou Dados incopletos</span>
@@ -37,12 +60,21 @@
                     </div>
 
                     <div class="row">
+<<<<<<< HEAD
                         <a v-on:click="Cadastrar" class="btn btn-danger col-12 mx-auto" >CADASTRAR</a>
                     </div> 
                     <div class="row">
                         <router-link to= "../login" class="btn btn-outline-dark col-12 mx-auto" >JÁ POSSOU UMA CONTA</router-link>
                     </div> 
 
+=======
+                        <router-link to= "../login" class="esqueceu-a-senha">já tem cadatrado?</router-link>
+                    </div>
+
+                    <div class="row">
+                        <a v-on:click="Cadastrar" class="btn btn-outline-dark col-12 mx-auto " >cadastrar</a>
+                    </div> 
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
                     
 
                 </div>
@@ -50,8 +82,11 @@
       </div>
     </div>
 
+<<<<<<< HEAD
     <router-link to= "../" class="voltar"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bookmark-x-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM6.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/></svg></router-link>
 
+=======
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
 
 </template>
 
@@ -68,8 +103,15 @@ export default{
       methods: {
                 login() {
                     this.exibirAlerta = false;
+<<<<<<< HEAD
                     var emailAdmin = 'admin@gmail.com';
                     var senhaAdmin = '123456';
+=======
+
+                    var emailAdmin = 'admin@gmail.com';
+                    var senhaAdmin = '123456';
+
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
                     if (this.email === emailAdmin && this.senha === senhaAdmin) {
                         alert('Login realizado com sucesso!');
                     } else {
@@ -79,30 +121,51 @@ export default{
                 }
       }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
     
 </script>
 
 <style>
     body{
+<<<<<<< HEAD
         background-color: black;
+=======
+        background-color: rgb(7,7,7);
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
         color: rgb(255,255,255);
     }
     .mx-auto{
         margin-top: 10px;
     }
     .form-control{
+<<<<<<< HEAD
         background-color: white;
         border: 1px solid rgb(250, 247, 247);
         color: black;
+=======
+        background-color: rgb(7,7,7) ;
+        box-shadow: 1px 5px 30px rgb(255, 255, 255);
+        border: 1px solid rgb(250, 247, 247);
+        color: rgb(255, 255, 255);
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
     }
     #telaLogin{
         width: 400px;
         position: absolute;
         top: 50%;
         left: 50%;
+<<<<<<< HEAD
         background-color: rgb(0,0,0);
         transform: translate(-50%,-50%);
         box-shadow: 1px 5px 10px rgb(255, 255, 255);
+=======
+        background-color: rgb(7,7,7);
+        transform: translate(-50%,-50%);
+        box-shadow: 1px 5px 30px rgb(255, 255, 255);
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
         border: 2px solid rgb(250, 247, 247);
         border-radius: 80px 0px 80px 0px;
         padding: 30px 30px;
@@ -115,17 +178,28 @@ export default{
         border-radius: .25rem;
         text-align: left;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
     .alert-danger {
         color: #721c24;
         background-color: #ac2530;
         border-color: #b41b2a;
+<<<<<<< HEAD
     }
+=======
+
+    }
+
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
     .erro-senha {
         width: 100%;
         text-align: left;
         color: red;
         font-size: 13px;
     }
+<<<<<<< HEAD
     img.imgCadastro{
         width: 160px;
         margin-left: 27%;
@@ -139,3 +213,12 @@ export default{
     background:black;
     }
 </style>
+=======
+    img{
+        width: 160px;
+        margin-left: 20px;
+        border-radius: 50%;
+    }
+
+</style>
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e

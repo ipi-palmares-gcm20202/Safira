@@ -148,7 +148,11 @@
 
 <script>
 export default {
+<<<<<<< HEAD
   name: 'home'
+=======
+  name: 'paginaInicial'
+>>>>>>> 09f4386b26157ba05a0d7e53f099695290fc248e
 }
 
 </script>
