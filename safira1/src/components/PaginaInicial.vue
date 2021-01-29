@@ -126,7 +126,7 @@
 
       <!--Inico Botão do login-->
       <div>
-      <img class="botaoLogin" src= "../assets/login.jpg" width="14%"/>
+      <router-link to= "../login"><img class="botaoLogin" src= "../assets/login.jpg" width="14%"/></router-link>
       </div>
       <!--Final Botão do login-->
     </aside>
@@ -148,7 +148,7 @@
 
 <script>
 export default {
-  name: 'pagina-inicial'
+  name: 'home'
 }
 
 </script>
