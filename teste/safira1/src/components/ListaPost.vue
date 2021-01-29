@@ -1,4 +1,5 @@
 <template>
+    <menu-primeiro/>
    <!--INÍCIO Corpo do Texto-->
     <div class="titulo">
       <h1>Os mais novos lançamentos </h1>
@@ -126,7 +127,7 @@
 
       <!--Inico Botão do login-->
       <div>
-      <router-link to= "../login"><img class="botaoLogin" src= "../assets/login.jpg" width="14%"/></router-link>
+      <img class="botaoLogin" src= "../assets/login.jpg" width="14%"/>
       </div>
       <!--Final Botão do login-->
     </aside>
@@ -148,7 +149,7 @@
 
 <script>
 export default {
-  name: 'home'
+  name: 'lista'
 }
 
 </script>
@@ -283,3 +284,4 @@ export default {
   
 
 </style>
+
