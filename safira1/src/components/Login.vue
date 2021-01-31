@@ -13,12 +13,12 @@
                 
                 <p class="blog-title" align="center"><i class="far fa-address-card"></i> Bem vindo(a) ao Safira !!</p> 
                 
-                <label for="exampleInputEmail1" class="form-label">Email:</label>
+                <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" v-model="email">
                 
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Senha:</label>
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
                 <i class="fas fa-key"></i>
                 <input type="password" class="form-control" id="exampleInputPassword1" v-model="senha">
               </div>
@@ -27,7 +27,7 @@
                 <a v-on:click="login" class="btn btn-danger col-11 mx-auto">ENTRAR</a>
               </div><br>
               <div class="row " align="center">
-                  <p class="esqueceu-a-senha">Esqueceu a senha?</p>
+                  <router-link to = "/recuperacao-senha" class="esqueceu-a-senha">Esqueceu a senha?</router-link>
               </div>
               <div class="row">
                   <router-link to = "/cadastro" class="btn btn-outline-danger col-11 mx-auto">CADASTRE-SE AGORA</router-link>
@@ -103,9 +103,9 @@ export default{
         text-align: left;
     }
     .alert-danger {
-        color: white;
-        background-color: #ac2530;
-        border-color: #b41b2a;
+    color: white;
+    background-color: red;
+    border-color: white;
     }
     .erro-senha {
         width: 100%;
@@ -122,9 +122,16 @@ export default{
     background-color: red;
     border-color:red;
 }
+.btn-danger:hover{
+    background:red;
+    border-color:white;
+}
 .btn-outline-danger {
-    color: #800000;
-    border-color: #800000;
+    color: 	#8B0000;
+    border-color: 	#8B0000;
+}
+.btn-outline-danger:hover {
+    background:	#8B0000;
 }
 .voltar{
     position: absolute;
@@ -137,4 +144,12 @@ a{
 a:hover{
     color:white;
 }
+.esqueceu-a-senha{
+    color:#FF69B4;
+    text-decoration:none;
+}
+.esqueceu-a-senha:hover{
+    color:red;
+}
+
 </style>

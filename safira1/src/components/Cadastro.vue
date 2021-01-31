@@ -115,11 +115,6 @@ export default{
         border-radius: .25rem;
         text-align: left;
     }
-    .alert-danger {
-        color: #721c24;
-        background-color: #ac2530;
-        border-color: #b41b2a;
-    }
     .erro-senha {
         width: 100%;
         text-align: left;
@@ -137,5 +132,8 @@ export default{
     color: red;
     border-color: red;
     background:black;
+    }
+    .btn-outline-dark:hover{
+    background:	#8B0000;
     }
 </style>
