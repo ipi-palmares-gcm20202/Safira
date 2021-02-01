@@ -14,7 +14,11 @@
 <div class="d-flex align-items-start">
   <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
     <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Posts</a>
-    <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">New Post</a>
+
+
+    <router-link to= "../novo-post" type="button" class="btn post">New Post</router-link>
+
+
     <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Report</a>
   </div>
   <div class="tab-content" id="v-pills-tabContent">
@@ -35,7 +39,7 @@
             
             <!--INICIO botão de adicionar-->
             <div class="add">
-              <router-link to= "../novo-post"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <router-link to= "../novo-post"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi add bi-plus-circle" viewBox="0 0 16 16">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></router-link>
             </div>  
@@ -76,53 +80,6 @@
   <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM7 9.5C7 8.672 6.552 8 6 8s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5zM4.285 6.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 4.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 3.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM10 8c-.552 0-1 .672-1 1.5s.448 1.5 1 1.5 1-.672 1-1.5S10.552 8 10 8z"/></svg> &nbsp; Não há posts cadastrados para os filtros especificados.
     </div>
     </table>
-    </div>
-    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"> 
-
-    <div class="formulario">  
-        <div class="new">
-            <h1>New Post</h1>
-        </div>
-    <!--INICIO ESPAÇO PARA COLOCAR O NOME DO ADMIN-->
-    <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome do admin">
-    </div>
-    <!--FINAL ESPAÇO PARA COLOCAR O NOME DO ADMIN-->
-
-    <!--INICIO ESPAÇO PARA COLOCAR O NOME DO PRODUTO E A DATA DE LANÇAMENTO-->
-    <div class="row">
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Nome do produto" aria-label="First name">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Data de lançamentos" aria-label="Last name">
-        </div>
-        </div>
-    <!--FINAL ESPAÇO PARA COLOCAR O NOME DO PRODUTO E A DATA DE LANÇAMENTO-->
-
-
-    <!--INICIO ESPAÇO PARA COLOCAR A DISCRIÇÃO E ANEXO-->
-    <form class="was-validated">
-        <div class="mb-3">
-            <label for="validationTextarea" class="form-label">Discrição</label>
-            <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Texto" required></textarea>
-            
-        </div>
-        <div class="mb-3">
-            <input type="file" class="form-control" aria-label="file example" required>
-            
-        </div>
-
-        <div class="mb-3">
-            <a v-on:click="login" class="btn btn-danger col-12 mx-auto">Enviar</a>
-        </div>
-    </form>
-    <!--FINAL ESPAÇO PARA COLOCAR A DISCRIÇÃO E ANEXO-->
-    
-    
-    
-    </div>
     </div>
     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Relatorios</div>
   </div>
@@ -182,6 +139,7 @@ export default{
         box(id){this.posts = this.posts.filter(post => post.id != id);
             this.buscar();}
     }
+    
 }
 
     
@@ -275,6 +233,12 @@ export default{
 }
 .table{
   border: 1px solid rgb(250, 247, 247);
+}
+.post{
+  color:white;
+}
+.post:hover{
+  color:white;
 }
 
 </style>
