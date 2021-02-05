@@ -8,6 +8,8 @@ import Categoria from '../components/Categoria'
 import NovoPost from '../components/NovoPost'
 
 
+
+
 const routes = [
   { path: '/', name: 'home', component: Home},
   { path: '/login',name: 'login',component: Login },

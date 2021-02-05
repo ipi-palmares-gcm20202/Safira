@@ -81,7 +81,70 @@
     </div>
     </table>
     </div>
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Relatorios</div>
+    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+                   <div class="row">
+                        
+                        <div class="col l3">
+                            <div class="card dashboard-item item2">
+                                <i class="far fa-newspaper"></i>
+                                <p>800 <span>Posts</span></p>
+                            </div>
+                        </div>
+                        <div class="col l3">
+                            <div class="card dashboard-item item3">
+                                <i class="far fa-comments"></i>
+                                <p>14.239 <span>Comentários</span></p>
+                            </div>
+                        </div>
+                        <div class="col l3">
+                            <div class="card dashboard-item item4">
+                                <i class="far fa-eye"></i>
+                                <p>40.746 <span>Visualizações</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col l12">
+                            
+                                <div class="avatar">
+                                    <i class="material-icons circle posts"><i class="far fa-newspaper"></i></i>
+                                    <span class="title">&nbsp;<b>Nova postagem</b></span>
+                                    <p class="texto">Toyota Corolla Cross <br>
+                                    Data do lançamento: 1º trimestre de 2021 <br>
+                                    Um dos lançamentos de carros mais aguardados de 2021 é o utilitário esportivo derivado do sedã médio mais vendido do país. Feito sobre a plataforma TNGA em Sorocaba (SP), o SUV médio chegará em março para brigar em um segmento hoje dominado pelo Compass.
+                                    </p>
+                                </div>
+
+                                <div class="avatar">
+                                    <i class="material-icons circle removido"><i class="fa fa-times"></i></i>
+                                    <span class="title">&nbsp;<b>Post removido</b></span>
+                                    <p class="texto">Samsung Galaxy A12 <br> 
+                                        Removido em 05/02/2021
+                                    </p>
+                                </div>
+
+                                <div class="avatar">
+                                    <i class="material-icons circle admin1"><i class="far fa-user"></i></i>
+                                    <span class="title">&nbsp;<b>Novo Usuário cadastrado</b></span>
+                                    <p class="texto">Jhon Silva <br>
+                                        Cadastrado em 01/02/2021
+                                    </p>
+                                </div>
+
+                                <div class="avatar">
+                                    <i class="material-icons circle posts"><i class="far fa-newspaper"></i></i>
+                                    <span class="title">&nbsp;<b>Nova postagem</b></span>
+                                    <p class="texto">Xiaomi Mi 11 <br>
+                                    Data do lançamento: 28 de dezembro de 2020 <br>
+                                    O Xiaomi Mi 11 é um smartphone Android de bom nível, ótimo para fotos, que pode satisfazer até o mais exigente dos usuários. Tem uma enorme tela Touchscreen de 6.81 polegadas e uma resolução de 3200x1440 pixels que é uma das mais altas atualmente em circulação.
+                                    </p>
+                                </div>
+                        </div>
+    
+    
+    
+    </div>
   </div>
 </div>
 
@@ -240,5 +303,88 @@ export default{
 .post:hover{
   color:white;
 }
+
+.button-div {
+    text-align: center;
+}
+.dashboard-item {
+    display: flex;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+.dashboard-item p {
+    margin: 0;
+    display: grid;
+    font-size: 32px;
+    font-weight: bold;
+}
+.dashboard-item p span {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.item2 {
+    background:	#8B008B;
+}
+.item3 {
+    background: #FF0000;
+}
+.item4 {
+    background: #0000CD;
+}
+.dashboard-item i {
+    font-size: 50px;
+    color: rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(0,0,0,0.3);
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.content {
+    width: calc(100% - 200px);
+    background: rgba(0,0,0,0.01);
+}
+.content h4 {
+    color: #349a46;
+    font-weight: 100;
+}
+.dashboard-content {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.row {
+    margin-bottom: 0!important;
+}
+.buttons-div {
+float: right;
+margin-bottom: 20px!important;
+}
+.breadcrumb-menu {
+    background: #349a46;
+    padding-left: 20px;
+}
+.avatar{
+    margin-top:20px;
+    border-top: 1px solid #606060;
+}
+.posts{
+    color:green;
+}
+.removido{
+     color:red;
+}
+.admin1{
+    color:blue;
+}
+p.texto{
+        font-size: 13pt;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Dancing Script', cursive;
+        color: 	#C0C0C0;
+    }
 
 </style>

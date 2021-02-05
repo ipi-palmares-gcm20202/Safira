@@ -11,7 +11,7 @@
                   <strong>Erro!</strong><a> E-mail e/ou senha inválido(s)</a>.
                 </div>
                 
-                <p class="blog-title" align="center"><i class="far fa-address-card"></i> Bem vindo(a) ao Safira !!</p> 
+                <p class="blog-title" align="center"> Bem vindo(a) ao Safira !!</p> 
                 
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" v-model="email">
@@ -19,7 +19,6 @@
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <i class="fas fa-key"></i>
                 <input type="password" class="form-control" id="exampleInputPassword1" v-model="senha">
               </div>
             
